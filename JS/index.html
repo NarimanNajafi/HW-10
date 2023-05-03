@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="CodeHim">
+  <title>Macdonald Shop</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Demo CSS (No need to include it into your project) -->
+  <link rel="stylesheet" href="css/demo.css">
+
+  <style>
+    .navbar {
+      height: 56px;
+      line-height: 56px;
+      padding: 0 50px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body class="bg-red-500">
+
+  <main>
+    <h1>رستوران مک دونالد شعبه تهران</h1>
+    <!-- Start DEMO HTML (Use the following code into your project)-->
+    <nav class="navbar navbar-inverse bg-secondary fixed-top bg-faded">
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#cart">سبد خرید (<span
+              class="total-count"></span>)</button><button class="clear-cart btn btn-secondary ml-5">خالی کردن سبد
+          </button>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Main -->
+    <div class="container">
+      <div class="row">
+        <div class="col col-md-6 txt-center">
+          <div class="card" style="width: 50rem;">
+            <img class="card-img-top" src="./img/IMG_5314.jpeg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">سالاد سبز</h4>
+              <p class="card-text">قیمت : 300000</p>
+              <a href="#" data-name="سالاد سبز" data-price="300000" class="add-to-cart btn btn-danger">اضافه به سبد
+                خرید</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-6 txt-center">
+          <div class="card" style="width: 50rem;">
+            <img class="card-img-top" src="./img/IMG_6320.jpeg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">فرنچ فرایز</h4>
+              <p class="card-text">قیمت : 150000</p>
+              <a href="#" data-name="فرنچ فرایز" data-price="150000" class="add-to-cart btn btn-danger">اضافه به سبد
+                خرید</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-6 txt-center">
+          <div class="card" style="width: 50rem;">
+            <img class="card-img-top" src="./img/IMG_5129.jpeg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">چیزبرگر</h4>
+              <p class="card-text">قیمت :‌250000</p>
+              <a href="#" data-name="چیزبرگر" data-price="250000" class="add-to-cart btn btn-danger text-white">اضافه به
+                سبد خرید</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-6 txt-center">
+          <div class="card" style="width: 50rem;">
+            <img class="card-img-top" src="./img/IMG-2685.JPG" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">سیب زمینی تنوری</h4>
+              <p class="card-text">قیمت : 150000</p>
+              <a href="#" data-name="سیب زمینی تنوری" data-price="150000"
+                class="add-to-cart btn btn-danger text-white">اضافه به سبد خرید</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-6 txt-center">
+          <div class="card" style="width: 50rem;">
+            <img class="card-img-top" src="./img/IMG-2687.JPG" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">پیتزا فیلی چیز استیک</h4>
+              <p class="card-text">قیمت :‌350000</p>
+              <a href="#" data-name="پیزا فیلی چیز استیک" data-price="350000"
+                class="add-to-cart btn btn-danger text-white">اضافه به سبد خرید</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-6 txt-center">
+          <div class="card" style="width: 50rem;">
+            <img class="card-img-top" src="./img/IMG-5100.JPG" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">پیتزا ساسیجا </h4>
+              <p class="card-text">قیمت :‌290000</p>
+              <a href="#" data-name="پیتزا ساسیجا " data-price="290000"
+                class="add-to-cart btn btn-danger text-white">اضافه به سبد خرید</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-6 txt-center">
+          <div class="card" style="width: 50rem;">
+            <img class="card-img-top" src="./img/IMG-5103.JPG" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">پیتزا تسورو </h4>
+              <p class="card-text">قیمت : 380000</p>
+              <a href="#" data-name="پیتزا تسورو " data-price="380000"
+                class="add-to-cart btn btn-danger text-white">اضافه به سبد خرید</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-6 txt-center">
+          <div class="card" style="width: 50rem;">
+            <img class="card-img-top" src="./img/IMG-6417.JPG" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">پیتزا آلفردو</h4>
+              <p class="card-text">قیمت : 280000</p>
+              <a href="#" data-name="پیتزا آلفردو" data-price="280000"
+                class="add-to-cart btn btn-danger text-white">اضافه به سبد خرید</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-6 txt-center">
+          <div class="card" style="width: 50rem;">
+            <img class="card-img-top" src="./img/IMG-6421.JPG" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">پیتزا فیلی چیز استیک</h4>
+              <p class="card-text">قیمت : 380000</p>
+              <a href="#" data-name="پیتزا فیلی چیز استیک" data-price="380000"
+                class="add-to-cart btn btn-danger text-white">اضافه به سبد خرید</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">سبد خرید</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="show-cart table">
+
+            </table>
+            <div>Total price: تومان<span class="total-cart"></span></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+            <button type="button" class="btn btn-danger">تکمیل سفارش</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END EDMO HTML (Happy Coding!)-->
+  </main>
+
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>
